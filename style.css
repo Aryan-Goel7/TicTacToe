@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    padding : 0px ; 
+    margin : 0px ; 
+    box-sizing: border-box;
+}
+html{
+    font-size : 16px ;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    height: 100vh;
+    width : 100vw ;
+    background: linear-gradient(135deg , #F9F5F6,#F2BED1);
+}
+.wrapper{
+    position : absolute ; 
+    transform : translate(-50% , -50%) ; 
+    left : 50% ; 
+    top : 50% ; 
+}
+.container {
+    height : 70vmin ; 
+    width : 70vmin ;
+    
+    display: flex ;
+    flex-wrap : wrap ; 
+    gap : 2vmin ;
+}
+.button-option{
+    background-color: #fff;
+    height : 22vmin ; 
+    width : 22vmin ;
+    border : none ; 
+    border-radius : 8px ;
+    font-size : 10vmin ;
+    color : #f2a7c2 ;
+}
+.restart{
+    font-size : 1.3em ; 
+    padding : 1em ; 
+    margin-top : 1.5em ;
+    border-radius : 8px ; 
+    border : none ;
+    margin : 1.5em auto 0 auto  ;
+    display : block ;
+}
+.pop-up{
+    width : 100% ; 
+    height : 100% ; 
+    position: absolute;
+    background: linear-gradient(135deg , #F9F5F6,#F2BED1);
+    display: flex ;
+    justify-content: center ;
+    align-items: center;
+    flex-direction: column;
+    gap : 0.2em ;
+    z-index : 2;
+    font-size : 12vmin ;
+}
+#message {
+    font-size : .6em;
+    padding : 1em 2em ;
+}
+.new-game{
+    font-size : 0.3em ;
+    padding : 0.4em .8em ;
+    border-radius : 8px ; 
+    border : none ;
+}
+.pop-up.hide{
+    display : none ;
+}
